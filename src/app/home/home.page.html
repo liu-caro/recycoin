@@ -1,12 +1,27 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Login
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
+<ion-item text-center no-lines>
+  <h1>Welcome to RecyCoin!</h1>
+</ion-item>
+
 <ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Email</ion-label>
+      <ion-input type="email" ngModel name="email" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" ngModel name="password" required [minlength]="6"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-content padding>
+    <ion-button [routerLink]="['/score']">Login</ion-button>
+  </ion-content>
 </ion-content>
