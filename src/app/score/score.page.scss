@@ -3,15 +3,8 @@ ion-card {
     --background: cyan;
   }
 
-ion-card-content {
-    --padding-top: 500px;
-    --padding-botom: 500px;
-}
-
 .encouragement {
-
-        // align-content: flex-end;
-        adding-top: -30px;
+        padding-top: -30px;
         align-content: flex-end;
 }
 
@@ -23,7 +16,6 @@ ion-card-content {
 .allSides
 		{
 			width:350px;height:300px;
-            // border: solid 1px #555;
             border-radius: 4px;
             margin: auto;
 			background-color: cyan;
@@ -37,10 +29,8 @@ ion-card-content {
          }
 
 #scanButton {
-    // align-content: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    // margin: auto;
     width: 50%;
 }
