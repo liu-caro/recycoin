@@ -1,1 +1,23 @@
-
+.center{
+    text-align: center;
+}
+#root{
+    --background: linear-gradient(rgb(39, 99, 221), rgb(46, 255, 169)); 
+}
+ion-list{
+    --background:transparent;
+    background:transparent;
+}
+ion-item{
+    --background:transparent;
+    color:white !important;
+}
+#headerimg{
+    width: 75vw;
+}
+ion-label{
+    color:white !important;
+}
+ion-input{
+    color:white !important;
+}

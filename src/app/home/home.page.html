@@ -1,27 +1,21 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Login
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-item text-center no-lines>
-  <h1>Welcome to RecyCoin!</h1>
-</ion-item>
-
-<ion-content padding>
-  <ion-list>
-    <ion-item>
-      <ion-label floating>Email</ion-label>
-      <ion-input type="email" ngModel name="email" required></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label floating>Password</ion-label>
-      <ion-input type="password" ngModel name="password" required [minlength]="6"></ion-input>
-    </ion-item>
+<ion-content id="root">
+  <ion-list padding >
+		<ion-item text-center no-lines>
+			<ion-img src="/assets/logo-white-384px.png" id="headerimg"></ion-img>
+		</ion-item>
+		<ion-item text-center no-lines>
+			<h1>Welcome to RecyCoin!</h1>
+		</ion-item>
+		<ion-item >
+			<ion-label floating>Email</ion-label>
+			<ion-input type="email" ngModel name="email" required></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label floating>Password</ion-label>
+			<ion-input type="password" ngModel name="password" required [minlength]="6"></ion-input>
+		</ion-item>
+		<ion-item>	
+			<ion-button [routerLink]="['/score']">Login</ion-button>
+		</ion-item>
   </ion-list>
-  <ion-content padding>
-    <ion-button [routerLink]="['/score']">Login</ion-button>
-  </ion-content>
 </ion-content>
