@@ -1,9 +1,28 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>fail</ion-title>
+    <ion-title>:(</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
+  
+
+<h2 class="greeting" style= "font-size: 40px; text-align: center; padding-top: 20px;"> Uh oh! You gave me something I couldn't recycle. </h2>
+
+  <div class="cardBox">
+  <div class="allSides">
+
+        <h2 style= "text-align: center; padding-top: 20px; padding-bottom: -2px;">You've lost:</h2>
+        <h1 style= "text-align: center; font-size: 50px;">-10</h1>
+        <h2 style= "text-align: center; padding-top: 12px; padding-bottom: -2px;">by depositing a <br>non-recyclable item.</h2>
+
+    <h2></h2>
+  </div>
+</div>
+
+<ion-content  padding>
+  <ion-button id="scanButton" style= "text-align: center;" [routerLink]="['/fail']">More bottles?</ion-button>
+  <ion-button id="scanButton" style= "text-align: center;" [routerLink]="['/score']">All done!</ion-button>
+</ion-content>
 
 </ion-content>
