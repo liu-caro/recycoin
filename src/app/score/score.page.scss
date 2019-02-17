@@ -1,36 +1,6 @@
-ion-card {
-
-    --background: cyan;
-  }
-
-.encouragement {
-        padding-top: -30px;
-        align-content: flex-end;
+ion-content{
+    --background: linear-gradient(rgb(39, 99, 221), rgb(46, 255, 169)); 
 }
-
-.cardBox
-		{
-            padding: 70px 0px 35px 0px;
- 		}
-
-.allSides
-		{
-			width:350px;height:300px;
-            border-radius: 4px;
-            margin: auto;
-			background-color: cyan;
-			box-shadow:  0 0 5px  rgba(0,0,0,0.6);
-			-moz-box-shadow: 0 0 5px  rgba(0,0,0,0.6);
-			-webkit-box-shadow: 0 0 5px  rgba(0,0,0,0.6);
-            -o-box-shadow: 0 0 5px  rgba(0,0,0,0.6);
-            align-content: center;
-            place-content: center;
-
-         }
-
-#scanButton {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
+.scanButton{
+    text-align:center;
 }

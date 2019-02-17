@@ -1,1 +1,18 @@
-
+ion-content{
+    --background: linear-gradient(rgb(39, 99, 221), rgb(46, 255, 169)); 
+}
+ion-list{
+    --background:transparent;
+}
+ion-item{
+    --background:transparent;
+}
+#headerimg{
+    width: 75vw;
+}
+ion-label{
+    color:white;
+}
+ion-input{
+    color:white;
+}

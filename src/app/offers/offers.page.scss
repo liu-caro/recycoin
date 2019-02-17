@@ -1,0 +1,19 @@
+#offersgrid {
+    --ion-grid-columns:4;
+    --ion-grid-padding:0px;
+}
+#offersgrid ion-img :not(.currency){
+    height:60px;
+    object-fit:cover;
+}
+.currency{
+    width:13pt;
+    height:13pt;
+    display:inline-block
+}
+ion-toolbar{
+    --background: linear-gradient(rgb(39, 99, 221), rgb(46, 255, 169)); 
+}
+ion-title{
+    color:white;
+}
