@@ -1,6 +1,6 @@
 #offersgrid {
     --ion-grid-columns:4;
-    --ion-grid-padding:0px;
+    --ion-grid-padding:2px;
 }
 #offersgrid ion-img :not(.currency){
     height:60px;
@@ -16,4 +16,8 @@ ion-toolbar{
 }
 ion-title{
     color:white;
+}
+.imgofoffer{
+    height:10vh;
+    object-fit:cover;
 }

@@ -4,3 +4,17 @@
     margin-right: auto;
     width: 50%;
 }
+#root{
+    --background: linear-gradient(rgb(39, 99, 221), rgb(46, 255, 169)); 
+}
+ion-content{
+    --background:transparent;
+    background:transparent;
+    
+}
+h1{
+    color:rgb(46, 255, 169);
+}
+h2{
+    color:white;
+}

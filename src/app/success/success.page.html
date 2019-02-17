@@ -1,10 +1,13 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="/score">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
     <ion-title>:)</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding id="root">
   
 
 <h2 class="greeting" style= "font-size: 40px; text-align: center; padding-top: 20px;"> Congrats! <br>You recycled successfully. </h2>
@@ -24,8 +27,8 @@
 
 
 <ion-content  padding>
-  <ion-button id="scanButton" style= "text-align: center;" [routerLink]="['/fail']">More bottles?</ion-button>
-  <ion-button id="scanButton" style= "text-align: center;" [routerLink]="['/score']">All done!</ion-button>
+  <ion-button id="scanButton" color="light" style= "text-align: center;" [routerLink]="['/fail']">More bottles?</ion-button>
+  <ion-button id="scanButton" color="light" style= "text-align: center;" [routerLink]="['/score']">All done!</ion-button>
 </ion-content>
 
 </ion-content>

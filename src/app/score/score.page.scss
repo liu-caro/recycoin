@@ -1,6 +1,26 @@
 ion-content{
-    --background: linear-gradient(rgb(39, 99, 221), rgb(46, 255, 169)); 
+    text-align: center;
+    display:flex;
+    align-items:center;
+}
+#root{
+    --background:rgb(39, 99, 221); 
 }
 .scanButton{
     text-align:center;
+}
+h2{
+    color:white;
+}
+h1{
+    color:rgb(46, 255, 169);
+    font-size:30pt !important;
+}
+.currency{
+    height:30pt;
+    width:30pt;
+    display:inline-block;
+    padding:0;
+    margin:0;
+    
 }
