@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Storage} from "@ionic/storage";
+import {getPts} from "../points"
 
 @Component({
   selector: 'app-score',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./score.page.scss'],
 })
 export class ScorePage implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+    ngOnInit(){}
+    constructor(private storage : Storage ) {
+    }
+    ionViewWillEnter() {
+      let pts = getPts(this.storage);
+      document.getElementById("scorehere").innerHTML = pts.toString();
+      document.getElementById("bottleshere").innerHTML = (pts / 5).toString();
+    }
 
 }

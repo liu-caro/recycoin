@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Storage} from "@ionic/storage";
+import {incrementPts} from "../points"
 
 @Component({
   selector: 'app-success',
@@ -6,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./success.page.scss'],
 })
 export class SuccessPage implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private storage : Storage ) {
+  }
+  ngOnInit(){}
+  ionViewWillEnter(){
+    incrementPts(5, this.storage);
   }
 
 }
